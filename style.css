@@ -36,7 +36,7 @@ src: url("circular.ttf");
   left: 50%;
   top: 15%;
 
-  background: url(img/IMG_0094.jpg);
+  background: url(img/IMG_0094.JPG);
   background-position: center;
   background-size: cover;
 }
@@ -61,7 +61,7 @@ src: url("circular.ttf");
   top: 0px;
 
   z-index: -2;
-  background: url(img/IMG_0411.jpg);
+  background: url(img/IMG_0411.JPG);
   background-position: center;
   background-size: cover;
 }
@@ -168,7 +168,7 @@ src: url("circular.ttf");
 
 .project > img{
   width: 500px;
-  height: 300px;
+  height: auto;
 }
 
 @media only screen and (max-width: 600px) {
