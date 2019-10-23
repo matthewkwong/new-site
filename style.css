@@ -22,7 +22,6 @@ src: url("circular.ttf");
 
 
 .description{
-  font-style: normal;
   font-weight: bold;
   font-size: 45px;
   color: #000000;
@@ -89,7 +88,7 @@ src: url("circular.ttf");
 
 .experience-header{
   /* border: solid 2px red; */
-
+  width: 40px;
   position: relative;
   top: 100vh;
   left: 10%;
@@ -102,6 +101,7 @@ src: url("circular.ttf");
 
 
 .experience-wrapper{
+  box-sizing: border-box;
   /* border: solid 2px blue; */
   /* width: 100% !important; */
   margin-top: 100vh;
@@ -120,6 +120,7 @@ src: url("circular.ttf");
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
+  width: 40px;
 }
 
 .project-wrapper{
@@ -171,10 +172,32 @@ src: url("circular.ttf");
   height: 300px;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 600px) {
+
+  .name{
+    display: none;
+  }
+
   .experience-wrapper, .project-wrapper{
     flex-direction: column;
   }
+
+  .background{
+    display: none;
+  }
+  /* .text-wrapper, .profile, .background{
+    display: none;
+  } */
+
+  .profile{
+    width: 200px;
+    height: 200px;
+  }
+
+  .text-wrapper{
+    width:200px;
+  }
+
 
   .project{
     /* border: solid 2px red; */
@@ -183,11 +206,16 @@ src: url("circular.ttf");
   }
 
   .project-description{
-    width: 400px;
+    /* width: 500px; */
+    width: 60%;
+    margin: auto;
   }
 
   .project > img{
-    width: 600px;
+    /* width: 500px; */
+    width: 60%;
+
     height: auto;
+    margin: auto;
   }
 }
