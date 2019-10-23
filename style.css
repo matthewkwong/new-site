@@ -102,8 +102,8 @@ src: url("circular.ttf");
 
 
 .experience-wrapper{
-  /* border: solid 2px red; */
-  width: 100%;
+  /* border: solid 2px blue; */
+  /* width: 100% !important; */
   margin-top: 100vh;
   /* border: solid 2px red; */
   /* height: 100vh; */
@@ -168,16 +168,26 @@ src: url("circular.ttf");
 
 .project > img{
   width: 500px;
-  height: auto;
+  height: 300px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 400px) {
+  .experience-wrapper, .project-wrapper{
+    flex-direction: column;
+  }
+
+  .project{
+    /* border: solid 2px red; */
+    display: flex;
+    justify-content: center;
+  }
+
   .project-description{
     width: 400px;
   }
 
   .project > img{
-    width: 400px;
+    width: 600px;
     height: auto;
   }
 }
