@@ -2,14 +2,15 @@
     display: none;
 }
 
-body{
-  overflow-x: hidden;
-  font-family: circular !important;
-}
 
 @font-face {
 font-family: "circular";
 src: url("circular.ttf");
+}
+
+body{
+  overflow-x: hidden;
+  font-family: circular !important;
 }
 
 .text-wrapper{
@@ -152,12 +153,11 @@ src: url("circular.ttf");
 
 .project-description{
   width: 500px;
-
 }
 
 
 .project-position{
-  text-decoration: bold;
+  font-weight: bold;
   color: #999;
   display: flex;
   /* border: solid 2px red; */
@@ -169,7 +169,9 @@ src: url("circular.ttf");
 
 .project > img{
   width: 500px;
-  height: 300px;
+  /* height: 300px; */
+  box-shadow: 0px 0px 42px 0px rgba(179,179,179,1);
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -205,15 +207,23 @@ src: url("circular.ttf");
     justify-content: center;
   }
 
+  .project-position{
+    flex-direction: column;
+  }
+
   .project-description{
     /* width: 500px; */
-    width: 60%;
+    width: 80%;
     margin: auto;
   }
 
+  /* .project-name{
+    font-size: 20px;
+  } */
+
   .project > img{
     /* width: 500px; */
-    width: 60%;
+    width: 80%;
 
     height: auto;
     margin: auto;
