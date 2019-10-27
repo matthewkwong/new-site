@@ -18,31 +18,38 @@ nav{
 }
 
 nav > a {
-  color: black;
+  color: #868686;
   font-size: 17px;
   padding: 20px;
   display: inline-block;
   transition: color .3s linear;
 }
 
+nav >  #active{
+    color:black;
+}
+
 nav > a:hover{
-  color:#868686;
+  color: black;
 }
 
 
 a{
   text-decoration: none;
   font-weight: bold;
-  color:  #999;
+  /* color:  #999; */
+  color:black;
 }
 
 
+
 .text-wrapper{
+  /* border: solid 2px red; */
   position: absolute;
   width: 505px;
   height: 192px;
   left: 10%;
-  top: 250px;
+  top:200px;
 }
 
 
@@ -163,6 +170,7 @@ a{
 }
 
 
+
 .project-position{
   font-weight: bold;
   color: #999;
@@ -172,6 +180,11 @@ a{
   line-height: 0;
   width: 100%;
   margin:0 !important;
+}
+
+
+.learn-more:hover {
+  text-decoration: underline;
 }
 
 .project > img{
@@ -227,11 +240,13 @@ footer img{
 
 @media only screen and (max-width: 600px) {
 
+
   /* svg{
     border: solid 2px red;
   } */
 
   .name{
+    margin-top:40%;
     text-align: left;
     margin-left: 0;
     width: 160%;
@@ -239,7 +254,12 @@ footer img{
   }
 
   .description{
-    font-size:55px;
+    margin-top:0px;
+    font-size:40px;
+  }
+
+  .button{
+    margin-top: 20%;
   }
 
   .background{
@@ -257,6 +277,10 @@ footer img{
     /* top:40%; */
     top:10%;
     width:200px;
+  }
+
+  .experience-header{
+    margin-top: 0px;
   }
 
   .experience-wrapper, .project-wrapper{
