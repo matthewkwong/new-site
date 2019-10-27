@@ -2,7 +2,6 @@
     display: none;
 }
 
-
 @font-face {
 font-family: "circular";
 src: url("circular.ttf");
@@ -12,6 +11,31 @@ body{
   overflow-x: hidden;
   font-family: circular !important;
 }
+
+nav{
+  text-align: right;
+  /* position: fixed; */
+}
+
+nav > a {
+  color: black;
+  font-size: 17px;
+  padding: 20px;
+  display: inline-block;
+  transition: color .3s linear;
+}
+
+nav > a:hover{
+  color:#868686;
+}
+
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color:  #999;
+}
+
 
 .text-wrapper{
   position: absolute;
@@ -49,7 +73,12 @@ body{
   height: 49px;
   color:#868686;
 
-  background: #EBEBEB;
+  background-color: #EBEBEB;
+  transition: background-color .3s linear;
+}
+
+.button:hover{
+  background-color: #e0e0e0;
 }
 
 
@@ -65,25 +94,6 @@ body{
   background-position: center;
   background-size: cover;
 }
-/*
-.bottom{
-  z-index: 10;
-  position: absolute;
-  width: 500px;
-  height: 200px;
-  right: 0px;
-  bottom: 0;
-  background: #282828;
-} */
-
-
-/* .work{
-  margin-top: 100vh;
-  border: solid 2px red;
-  height: 100vh;
-} */
-
-
 
 
 
@@ -136,7 +146,6 @@ body{
   justify-content: center;
 }
 
-
 .project-name{
   font-size: 25px;
   line-height: 0;
@@ -144,9 +153,7 @@ body{
 
 .project{
   margin: 40px;
-  /* width: 500px;
-  height: 300px; */
-  /* background: #C4C4C4; */
+
   display: flex;
   flex-direction: column;
 }
@@ -175,14 +182,64 @@ body{
 
 }
 
+
+#hack-club{
+  color: #E42D42;
+}
+
+
+
+
+
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+footer #icons{
+  justify-content: center;
+  /* border: solid 2px red; */
+  display: flex;
+  padding: 0px 0 20px 0;
+}
+
+footer #icons a{
+  transition: 0.2s;
+}
+
+footer #icons:hover > a {
+  opacity: 0.5;
+}
+
+footer #icons:hover > a:hover {
+  opacity: 1.0;
+}
+
+footer img{
+  padding: 0 5px;
+  height: 30px;
+}
+
 @media only screen and (max-width: 600px) {
 
+  /* svg{
+    border: solid 2px red;
+  } */
+
   .name{
-    display: none;
+    text-align: left;
+    margin-left: 0;
+    width: 160%;
+    /* display: none; */
   }
 
-  .experience-wrapper, .project-wrapper{
-    flex-direction: column;
+  .description{
+    font-size:55px;
   }
 
   .background{
@@ -193,12 +250,17 @@ body{
   } */
 
   .profile{
-    width: 200px;
-    height: 200px;
+    display: none;
   }
 
   .text-wrapper{
+    /* top:40%; */
+    top:10%;
     width:200px;
+  }
+
+  .experience-wrapper, .project-wrapper{
+    flex-direction: column;
   }
 
 
