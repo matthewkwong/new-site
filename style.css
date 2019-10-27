@@ -111,7 +111,6 @@ a{
   top: 100vh;
   left: 10%;
 
-  font-family: Circular Std;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -293,6 +292,7 @@ footer img{
     display: flex;
     justify-content: center;
   }
+
 
   .project-position{
     flex-direction: column;
