@@ -2,8 +2,6 @@
     display: none;
 }
 
-
-
 @font-face {
 font-family: "circular";
 src: url("circular.ttf");
@@ -18,6 +16,15 @@ nav{
   /* background-color: red; */
   text-align: right;
   /* position: fixed; */
+}
+
+.logo{
+  float: left;
+  /* color:black; */
+  position: absolute;
+  padding-top:10px;
+  left: 20px;
+  height: 70px;
 }
 
 nav > a {
@@ -83,12 +90,15 @@ a{
   height: 49px;
   color:#868686;
 
-  background-color: #EBEBEB;
-  transition: background-color .3s linear;
+  border: #868686 2px solid;
+
+  /* background-color: #EBEBEB; */
+  transition: 0.3s;
 }
 
 .button:hover{
-  background-color: #e0e0e0;
+  color:white;
+  background-color: #868686;
 }
 
 
@@ -106,9 +116,8 @@ a{
 }
 
 
-
+/*
 .experience-header{
-  /* border: solid 2px red; */
   width: 40px;
   position: relative;
   top: 100vh;
@@ -117,7 +126,7 @@ a{
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
-}
+} */
 
 
 .experience-wrapper{
@@ -133,15 +142,14 @@ a{
 }
 
 
-.projects-header{
-  /* border: solid 2px red; */
+/* .projects-header{
   position: relative;
   left: 10%;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   width: 40px;
-}
+} */
 
 .project-wrapper{
 
@@ -162,6 +170,8 @@ a{
 }
 
 .project{
+
+  opacity: 1;
   margin: 40px;
 
   display: flex;
@@ -246,9 +256,13 @@ footer img{
 }
 
 
+
+
+
 /* About Page  */
 .about-me-wrapper{
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   margin-right: 10%;
   margin-left: 10%;
@@ -259,29 +273,54 @@ footer img{
 
 .about-me-text{
   line-height: 1.5;
-  font-size: 17px;
+  font-size: 15px;
   /* left:0; */
   width: 50%;
   /* border: solid 2px red; */
   box-sizing: border-box;
  /* height: 100vh; */
+}
 
+.about-me-text > h1{
+  font-size: 40px;
+}
+
+.about-me-text > p, ul{
+  color:#999;
 }
 
 .about-me-profile{
   display: flex;
-  /* Vertical Alignment */
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  /* right: 0; */
-  width: 50%;
+  /* width: 50%; */
 
   box-sizing: border-box;
+  /* right: 0; */
   /* border: solid 2px blue; */
+ }
+
+#pic{
+  display: block;
+  max-height: 450px;
+  /* max-width: auto; */
 }
 
-.about-me-profile >  #pic{
-  max-height: 450px;
+.resume-button{
+  position: absolute;
+  text-align: center;
+  width: 220px;
+  height: 49px;
+  color:#2698EC;
+
+  border: solid 2px #2698EC;
+
+  transition: 0.3s;
+}
+
+.resume-button:hover{
+  background-color: #2698EC;
+  color:white;
 }
 
 @media only screen and (min-width: 1500px) {
@@ -291,6 +330,26 @@ footer img{
 
   .project > img{
     width: 700px;
+  }
+
+  .about-me-text{
+    font-size: 18px;
+  }
+
+  #pic{
+    display: block;
+    max-height: 550px;
+    /* max-width: auto; */
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #pic{
+    height: 350px;
+  }
+
+  .about-me-wrapper{
+    margin-bottom: 100px;
   }
 }
 
@@ -304,11 +363,32 @@ footer img{
     width: 100%;
   }
 
-  .about-me-profile{
-    width: 100%;
+  #pic{
+    display: flex;
+    justify-content: center;
+    width:400px;
+    height: 400px;
   }
 }
 
+@media only screen and (max-width: 1200px) {
+
+
+  .background{
+  /* right:0;
+  width: 60%; */
+    display: none;
+  }
+/* .text-wrapper, .profile, .background{
+  display: none;
+} */
+
+  .profile{
+    /* width: 300px;
+    height: 300px; */
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -331,19 +411,6 @@ footer img{
 
   .button{
     margin-top: 20%;
-  }
-
-  .background{
-    /* right:0;
-    width: 60%; */
-    display: none;
-  }
-  /* .text-wrapper, .profile, .background{
-    display: none;
-  } */
-
-  .profile{
-    display: none;
   }
 
   .text-wrapper{
@@ -382,10 +449,10 @@ footer img{
     font-size: 20px;
   } */
 
+
   .project > img{
     /* width: 500px; */
     width: 80%;
-
     height: auto;
     margin: auto;
   }

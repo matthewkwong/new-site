@@ -8,12 +8,16 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   <title>Matthew Kwong | Home</title>
 </head>
 
 <body>
   <nav>
-    <a href = "#" id ="active">portfolio</a>
+    <img src = "img/logo.png" height =  "40" alt = "logo" class = "logo">
+    <!-- <a class = "logo">Matthew Kwong</a> -->
+    <a href = "index.html" id ="active" >portfolio</a>
     <a href = "about.html">about</a>
     <a href = "#">contact</a>
   </nav>
@@ -33,8 +37,8 @@
     <p>Director of Design at <a href = "http://include-davis.herokuapp.com/">Include</a></p>
 
     <a href = "#portfolio">
-      <div class = "button">
-        <p class = "projects">Portfolio</p>
+      <div class = "button" id ="portfolio-button">
+        <p>Portfolio</p>
       </div>
     </a>
   </div>
@@ -51,10 +55,10 @@
 
 <!--<h2 class = "experience-header" id = "portfolio">Experience</h2> -->
 
-    <div class = "experience-wrapper">
+    <div class = "experience-wrapper" id = "portfolio">
 
       <div class = "project">
-        <img src = "img/lego.jpg" alt = "bg">
+        <img src = "img/lego.jpg" alt = "Lego" class = "project-img">
         <div class = "project-description">
           <h3 class = "project-name">LEGO House Redesign</h3>
 
@@ -72,7 +76,7 @@
 
 
       <div class = "project">
-        <img src = "img/include.png" alt = "bg">
+        <img src = "img/include.png" alt = "bg" class = "project-img">
         <div class = "project-description">
           <h3 class = "project-name">include</h3>
 
@@ -91,7 +95,7 @@
 
 
       <div class = "project">
-        <img src = "img/spotify.png" alt = "bg">
+        <img src = "img/spotify.png" alt = "Spotify Rooms" class = "project-img">
         <div class = "project-description">
           <h3 class = "project-name">Spotify Rooms</h3>
 
@@ -111,7 +115,7 @@
 
 
       <div class = "project">
-        <img src = "img/homeless.png" alt = "bg">
+        <img src = "img/homeless.png" alt = "Help the Homies" class = "project-img">
         <div class = "project-description">
           <h3 class = "project-name">Help the Homies</h3>
 
@@ -128,7 +132,7 @@
       </div>
 
       <div class = "project">
-        <img src = "img/hack-club.png" alt = "image of the Hack Club site">
+        <img src = "img/hack-club.png" alt = "image of the Hack Club site" class = "project-img">
         <div class = "project-description">
           <h3 class = "project-name">Hack Club</h3>
 
@@ -148,7 +152,7 @@
 
 
       <div class = "project">
-        <img src = "img/spotify.png" alt = "bg">
+        <img src = "img/spotify.png" alt = "Spotify Rooms" class = "project-img">
         <div class = "project-description">
           <h3 class = "project-name">Graphic Design</h3>
 
@@ -178,6 +182,7 @@
       <a href= "mailto:&#109;&#097;&#116;&#116;&#104;&#101;&#119;&#114;&#107;&#119;&#111;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank"> <img src = "img/footer/envelope.svg" alt = "mail icon"></a>
     </div>
   </footer>
-  <!-- <script src="script.js"></script> -->
+
+  <script src="script.js"></script>
 </body>
 </html>
