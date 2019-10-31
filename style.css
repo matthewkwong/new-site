@@ -2,6 +2,8 @@
     display: none;
 }
 
+
+
 @font-face {
 font-family: "circular";
 src: url("circular.ttf");
@@ -13,6 +15,7 @@ body{
 }
 
 nav{
+  /* background-color: red; */
   text-align: right;
   /* position: fixed; */
 }
@@ -141,7 +144,8 @@ a{
 }
 
 .project-wrapper{
-  margin-top: -5vh;
+
+  /* margin-top: -5vh; */
   /* border: solid 2px red; */
 
   width: 100%;
@@ -168,15 +172,19 @@ a{
   width: 500px;
 }
 
-
+.project-text{
+  /* border: 2px red solid; */
+  /* margin-top: 5px; */
+}
 
 .project-position{
+  /* font-size: 14px; */
   font-weight: bold;
   color: #999;
   display: flex;
   /* border: solid 2px red; */
   justify-content: space-between;
-  line-height: 0;
+  line-height: 0!important;
   width: 100%;
   margin:0 !important;
 }
@@ -237,8 +245,64 @@ footer img{
   height: 30px;
 }
 
-@media only screen and (max-width: 600px) {
 
+
+
+/* About Page  */
+.about-me-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top:5%;
+  /* border: solid 2px green;
+  box-sizing: border-box; */
+}
+
+.about-me-text{
+  line-height: 1.5;
+
+  left:0;
+  width: 50%;
+  /* border: solid 2px red; */
+  box-sizing: border-box;
+ /* height: 100vh; */
+
+}
+
+.about-me-profile{
+  display: flex;
+  /* Vertical Alignment */
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  width: 50%;
+
+  box-sizing: border-box;
+  border: solid 2px blue;
+}
+
+.about-me-profile >  #pic{
+  max-height: 400px;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* About Me Page */
+  .about-me-wrapper{
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .about-me-text{
+    width: 100%;
+  }
+
+  .about-me-profile{
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
 
   /* svg{
     border: solid 2px red;
