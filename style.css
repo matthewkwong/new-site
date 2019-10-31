@@ -170,12 +170,19 @@ a{
 }
 
 .project{
-
-  opacity: 1;
   margin: 40px;
 
   display: flex;
   flex-direction: column;
+
+  opacity: 0;
+  transform: translate(0, 20px);
+  transition: all 1s;
+}
+
+.project.visible {
+opacity: 1;
+transform: translate(0, 0);
 }
 
 .project-description{
