@@ -15,7 +15,7 @@ body{
 
 /* Solves error when nav bar is no longer clicked and user expands screen again */
 .back-up{
-  margin-top:-50px;
+  margin-top:-100px;
   display: block;
 }
 
@@ -31,7 +31,7 @@ nav {
   top:0;
   z-index: 21;
   width: 100%;
-  height: 50px;
+  height: 100px;
   font-family: circular;
 }
 
@@ -61,6 +61,8 @@ nav > .nav-links > a{
   color: #868686;
   font-size: 17px;
   padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: inline-block;
   transition: color .3s linear;
 }
@@ -389,6 +391,74 @@ footer img{
   color:white;
 }
 
+
+
+
+
+/* Individual Pages */
+.project-banner{
+  width: 100%;
+  height: 500px;
+  background-image:url("img/include.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project-heading{
+  margin-top:5%;
+  text-align: center;
+  line-height: 90%;
+}
+
+.project-heading > #include-page {
+  color: #1BBE9C;
+}
+
+
+.project-heading > h1{
+  font-size: 40px;
+}
+
+.project-heading > h3{
+  color: #B2B2B2;
+}
+
+
+.project-body-text{
+  /* border: solid 2px red; */
+  /* margin-top:5%; */
+  font-size: 18px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+}
+
+.project-body-text > h2{
+  margin-top:5%;
+}
+
+.project-body-text > p{
+  color: #B3B3B3;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.image{
+  /* position: relative; */
+  /* text-align: center; */
+  margin-bottom: 5%;
+  text-align: center;
+  color: #B3B3B3;
+}
+
+.image > img{
+  display: block;
+  margin: auto;
+}
+
+
+
+
 @media only screen and (min-width: 1500px) {
   .project-description{
     width: 700px;
@@ -410,7 +480,12 @@ footer img{
 }
 
 @media only screen and (max-width: 1300px) {
-  #pic{
+  .project-position{
+    /* border: solid 2px red; */
+    flex-direction: column;
+  }
+
+    #pic{
     height: 350px;
   }
 
@@ -419,25 +494,6 @@ footer img{
   }
 }
 
-@media only screen and (max-width: 1000px) {
-
-  /* About Me Page */
-  .about-me-wrapper{
-    justify-content: center;
-    flex-direction: column;
-  }
-  .about-me-text{
-    width: 100%;
-  }
-
-
-  #pic{
-    display: flex;
-    justify-content: center;
-    width:400px;
-    height: 400px;
-  }
-}
 
 @media only screen and (max-width: 1200px) {
 
@@ -485,11 +541,6 @@ footer img{
     line-height: 0;
   }
 
-  .project-position{
-    /* border: solid 2px red; */
-    flex-direction: column;
-  }
-
   .project-description{
     width: 80%;
     /* border: solid 2px red; */
@@ -506,6 +557,26 @@ footer img{
 }
 
 
+
+@media only screen and (max-width: 1000px) {
+
+  /* About Me Page */
+  .about-me-wrapper{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-me-text{
+    width: 100%;
+  }
+
+
+  #pic{
+    display: flex;
+    justify-content: center;
+    width:400px;
+    height: 400px;
+  }
+}
 
 @media only screen and (max-width: 750px) {
 
