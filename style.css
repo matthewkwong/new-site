@@ -471,6 +471,7 @@ footer img{
 
   .button{
     margin-top: 20%;
+    margin-bottom: 40%;
   }
 
   .text-wrapper{
@@ -493,6 +494,9 @@ footer img{
     flex-direction: column;
   }
 
+  h3{
+    line-height: 0;
+  }
 
   .project-position{
     flex-direction: column;
