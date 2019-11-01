@@ -12,13 +12,38 @@ body{
   font-family: circular !important;
 }
 
+
+/* Solves error when nav bar is no longer clicked and user expands screen again */
+.back-up{
+  margin-top:-50px;
+  display: block;
+}
+
+
 nav{
+  z-index: 10;
   /* background-color: red; */
   text-align: right;
   /* position: fixed; */
 }
 
-.logo{
+nav {
+  top:0;
+  z-index: 21;
+  width: 100%;
+  height: 50px;
+  font-family: circular;
+}
+
+nav #nav-button {
+  display: none;
+}
+
+nav #nav-check {
+  display: none;
+}
+
+.logo, .logo-white{
   float: left;
   /* color:black; */
   position: absolute;
@@ -27,7 +52,12 @@ nav{
   height: 70px;
 }
 
-nav > a {
+.logo-white{
+  display: none
+}
+
+
+nav > .nav-links > a{
   color: #868686;
   font-size: 17px;
   padding: 20px;
@@ -35,11 +65,11 @@ nav > a {
   transition: color .3s linear;
 }
 
-nav >  #active{
+nav > .nav-links > .active{
     color:black;
 }
 
-nav > a:hover{
+nav > .nav-links > a:hover{
   color: black;
 }
 
@@ -88,9 +118,9 @@ a{
   text-align: center;
   width: 220px;
   height: 49px;
-  color:#868686;
+  color:black;
 
-  border: #868686 2px solid;
+  border: black 2px solid;
 
   /* background-color: #EBEBEB; */
   transition: 0.3s;
@@ -98,7 +128,7 @@ a{
 
 .button:hover{
   color:white;
-  background-color: #868686;
+  background-color: black;
 }
 
 
@@ -301,7 +331,6 @@ footer img{
   /* align-items: center; */
   justify-content: center;
   /* width: 50%; */
-
   box-sizing: border-box;
   /* right: 0; */
   /* border: solid 2px blue; */
@@ -310,7 +339,7 @@ footer img{
 #pic{
   display: block;
   max-height: 450px;
-  /* max-width: auto; */
+  max-width: 450px;
 }
 
 .resume-button{
@@ -370,6 +399,7 @@ footer img{
     width: 100%;
   }
 
+
   #pic{
     display: flex;
     justify-content: center;
@@ -379,7 +409,6 @@ footer img{
 }
 
 @media only screen and (max-width: 1200px) {
-
 
   .background{
   /* right:0;
@@ -395,6 +424,7 @@ footer img{
     height: 300px; */
     display: none;
   }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -462,5 +492,92 @@ footer img{
     width: 80%;
     height: auto;
     margin: auto;
+  }
+
+  .about-me-wrapper{
+    margin-top:10%;
+  }
+
+
+/* Navbar  */
+  .back-up{
+    display: none;
+  }
+
+  .logo-white{
+    display: block;
+  }
+
+
+  .nav-links{
+    z-index: 4;
+  }
+
+  nav #nav-button {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  nav #nav-button label {
+    display: inline-block;
+    padding: 35px;
+    transition: all 0.3s ease-in;
+  }
+
+  /* 3 squiggle bar hover */
+
+  nav #nav-button label span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #999;
+  }
+
+  nav .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: black;
+    opacity: 0.9;
+    overflow-y: hidden;
+    left: 0px;
+    text-align: left;
+  }
+
+  nav > .nav-links > #portfolio-tab{
+      margin-top: 150px;
+  }
+
+  nav > .nav-links > .active{
+    color:white;
+  }
+
+  nav > .nav-links >  a:hover{
+      color:white;
+  }
+
+  nav .nav-links a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    /* color: white; */
+    transition: all 0.3s ease-in;
+    text-align: left;
+  }
+
+  nav #nav-check:not(:checked) ~ .nav-links {
+    /* height: 0px; */
+    height: 100vh;
+    width: 50%;
+    display: none;
+  }
+
+  nav #nav-check:checked ~ .nav-links {
+    height: 500vh;
+    width: 50%;
+    display: block;
+    overflow-y: auto;
   }
 }

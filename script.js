@@ -7,7 +7,7 @@ $(document).ready(function () {
   });
 });
 
-
+// Scroll elements fade in
 $(document).on("scroll", function () {
   var pageTop = $(document).scrollTop()
   var pageBottom = pageTop + $(window).height()
@@ -23,3 +23,30 @@ $(document).on("scroll", function () {
       }
   }
 })
+
+$(document).ready(function(){
+  /*Fades in page on load */
+  $('body, .about-me-wrapper').css('display', 'none');
+  $('body, .about-me-wrapper').fadeIn(1000);
+});
+
+// Navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+
+
+
+
+// navbar slides down on mobile
+$(document).ready(function () {
+  $('#nav-button').click(function(){
+    $('.nav-links').animate({width: 'toggle'}, 300)();
+  });
+});
