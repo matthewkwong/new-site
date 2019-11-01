@@ -369,7 +369,7 @@ footer img{
 #pic{
   display: block;
   max-height: 450px;
-  max-width: 450px;
+  width: auto;
 }
 
 .resume-button{
@@ -507,22 +507,23 @@ footer img{
 
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 750px) {
 
 
-.background{
-/* right:0;
-width: 60%; */
+  .background{
+  /* right:0;
+  width: 60%; */
+    display: none;
+  }
+  /* .text-wrapper, .profile, .background{
   display: none;
-}
-/* .text-wrapper, .profile, .background{
-display: none;
-} */
+  } */
 
-.profile{
-  /* width: 300px;
-  height: 300px; */
-  display: none;
+  .profile{
+    /* width: 300px;
+    height: 300px; */
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
