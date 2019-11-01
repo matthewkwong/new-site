@@ -220,6 +220,8 @@ transform: translate(0, 0);
 }
 
 .project-text{
+  word-wrap: break-word
+
   /* border: 2px red solid; */
   /* margin-top: 5px; */
 }
@@ -442,6 +444,7 @@ footer img{
   }
 
   .description{
+
     margin-top:0px;
     font-size:40px;
   }
