@@ -238,7 +238,7 @@ a{
   color:black;
   text-transform: uppercase;
   font-size: 12px;
-  padding:4px;
+  /* padding:4px; */
   border: black 2px solid;
   transition: 0.3s;
   line-height: normal;
@@ -341,7 +341,7 @@ footer img{
   flex-direction: row;
   margin-right: 10%;
   margin-left: 10%;
-  margin-top:5%;
+  /* margin-top:5%; */
   /* border: solid 2px green;
   box-sizing: border-box; */
 }
@@ -372,12 +372,12 @@ footer img{
   box-sizing: border-box;
   /* right: 0; */
   /* border: solid 2px blue; */
- }
+}
 
 #pic{
+  height: 450px;
   display: block;
-  max-height: 450px;
-  width: auto;
+  margin: auto;
 }
 
 .resume-button{
@@ -426,10 +426,9 @@ footer img{
 }
 
 .project-heading{
-  line-height: 2;
+  line-height: normal;
   margin-top:5%;
   text-align: center;
-  line-height: 90%;
 }
 
 .project-heading > #include-page {
@@ -446,6 +445,7 @@ footer img{
 
 .project-heading > h1{
   font-size: 40px;
+  line-height: .5;
 }
 
 .project-heading > h2 > a{
@@ -455,7 +455,6 @@ footer img{
 .project-heading > h3{
   color: #B2B2B2;
 }
-
 
 
 .project-body-text{
@@ -744,7 +743,7 @@ footer img{
   .project-heading{
     width: 100%;
     /* border:solid 2px red; */
-    line-height: normal;
+    /* line-height: normal; */
     margin-top:10%;
     margin-bottom:10%;
   }
@@ -765,4 +764,5 @@ footer img{
   .image > p{
     margin-left: 10%;
     margin-right: 10%;
+  }
 }
