@@ -405,7 +405,7 @@ footer img{
 /* Individual Pages */
 .project-banner{
   word-wrap: break-word;
-
+  white-space: initial;
   width: 100%;
   height: 500px;
   background-repeat: no-repeat;
@@ -447,6 +447,9 @@ footer img{
 }
 
 .project-heading > h1{
+  word-wrap: break-word;
+  white-space: initial;
+
   font-size: 40px;
 }
 
