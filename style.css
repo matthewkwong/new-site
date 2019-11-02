@@ -586,9 +586,7 @@ footer img{
     flex-direction: column;
   }
 
-  h3{
-    line-height: 0;
-  }
+
 
   .project-description{
     width: 80%;
