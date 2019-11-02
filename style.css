@@ -481,8 +481,7 @@ footer img{
 .project-body-text > h3{
   margin-left: 5%;
   margin-right: 5%;
-  word-wrap: break-word;
-  white-space: initial;
+  width: 100%;
 }
 
 
@@ -587,9 +586,7 @@ footer img{
     flex-direction: column;
   }
 
-  h3{
-    line-height: 0;
-  }
+
 
   .project-description{
     width: 80%;
@@ -745,7 +742,11 @@ footer img{
 
 /* Individual Pages */
   .project-heading{
-    margin:10%;
+    width: 100%;
+    /* border:solid 2px red; */
+    line-height: normal;
+    margin-top:10%;
+    margin-bottom:10%;
   }
 
   .project-heading > h2 > a{
