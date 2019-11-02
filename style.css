@@ -210,11 +210,11 @@ a{
   margin-left: 50px;
   align-items: center;
   position: relative;
+  line-height: 1.5;
 }
 
 .project-description p {
-
-font-size: 17px;
+  font-size: 17px;
 }
 
 .project-position{
@@ -241,6 +241,7 @@ font-size: 17px;
   padding:4px;
   border: black 2px solid;
   transition: 0.3s;
+  line-height: normal;
 }
 
 .learn-more:hover{
@@ -447,7 +448,6 @@ footer img{
   font-size: 40px;
 }
 
-
 .project-heading > h2 > a{
   color: #2698EC;
 }
@@ -480,7 +480,7 @@ footer img{
 
 .project-body-text > h3{
   margin-left: 5%;
-  margin-right: 5%;  
+  margin-right: 5%;
 }
 
 
@@ -736,4 +736,25 @@ footer img{
     display: block;
     overflow-y: auto;
   }
+
+  .project-name{
+    font-size: 35px;
+  }
+
+/* Individual Pages */
+  .project-heading{
+    margin:10%;
+  }
+
+  .project-heading > h2 > a{
+    font-size: 18px;
+  }
+
+  .image > img{
+    width: 100%;
+  }
+
+  .image > p{
+    margin-left: 10%;
+    margin-right: 10%;
 }
