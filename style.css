@@ -415,6 +415,12 @@ footer img{
   background-size: cover;
 }
 
+.spotify-banner{
+  background-image:url("img/rooms-banner.jpg");
+  background-size: cover;
+}
+
+
 .homeless-banner{
   background-image:url("img/homeless.jpg");
   background-size: cover;
@@ -433,6 +439,10 @@ footer img{
 
 .project-heading > #include-page {
   color: #1BBE9C;
+}
+
+.project-heading > #spotify-page {
+  color: #27B954;
 }
 
 .project-heading > #homeless-page {
@@ -462,9 +472,14 @@ footer img{
   /* border: solid 2px red; */
   /* margin-top:5%; */
   font-size: 18px;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-bottom: 5%;
+}
+
+.project-body-text ul{
+  margin-left: 5%;
+  color: #B3B3B3;
 }
 
 .project-body-text > h2{
@@ -472,7 +487,6 @@ footer img{
 }
 
 .project-body-text > p{
-  color: #B3B3B3;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -481,6 +495,24 @@ footer img{
   margin-left: 5%;
   margin-right: 5%;
   width: 100%;
+}
+
+
+.demo-text{
+  flex-direction: column;
+  margin-right: 10%;
+  width: 40%;
+}
+
+
+.demo{
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 5%;
 }
 
 
@@ -497,9 +529,31 @@ footer img{
   margin: auto;
 }
 
+.rooms-links-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  vertical-align: center;
+  text-align: center;
+  width: 100%;
+}
 
+.rooms-links-container > .rooms-links{
+  /* position: absolute; */
+  width: 220px;
+  color: #27b954;
+  align-items: center;
 
+  border: #27b954 2px solid;
+  
+  /* background-color: #EBEBEB; */
+  transition: 0.3s;
+}
 
+.rooms-links-container > .rooms-links:hover{
+  color:white;
+  background-color: #27b954;
+}
 
 
 @media only screen and (min-width: 1500px) {
@@ -622,11 +676,25 @@ footer img{
     width:400px;
     height: 400px;
   }
+
+  /* Spotify Rooms */
+  .demo{
+    flex-direction: column;
+  }
+
+  .demo-text{
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  .demo > video{
+    margin-bottom: 10%;
+  }
+
+
 }
 
 @media only screen and (max-width: 750px) {
-
-
   .background{
   /* right:0;
   width: 60%; */
@@ -641,9 +709,6 @@ footer img{
     height: 300px; */
     display: none;
   }
-
-
-
 }
 
 @media only screen and (max-width: 600px) {
