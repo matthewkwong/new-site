@@ -386,7 +386,6 @@ footer img{
   text-align: center;
   width: 230px;
   line-height: normal;
-  height: 50px;
   color:#2698EC;
 
   border: solid 2px #2698EC;
@@ -422,7 +421,7 @@ footer img{
 
 
 .homeless-banner{
-  background-image:url("img/homeless.jpg");
+  background-image:url("img/homies-banner.jpg");
   background-size: cover;
 }
 
@@ -489,6 +488,12 @@ footer img{
 .project-body-text > p{
   margin-left: 5%;
   margin-right: 5%;
+  color: #B3B3B3;
+}
+
+
+.project-body-text > .demo > .demo-text > p{
+  color: #B3B3B3;
 }
 
 .project-body-text > h3{
@@ -545,7 +550,7 @@ footer img{
   align-items: center;
 
   border: #27b954 2px solid;
-  
+
   /* background-color: #EBEBEB; */
   transition: 0.3s;
 }
