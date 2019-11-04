@@ -407,27 +407,28 @@ footer img{
   height: 500px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .include-banner{
   background-image:url("img/include.png");
-  background-size: cover;
 }
 
 .spotify-banner{
   background-image:url("img/rooms-banner.jpg");
-  background-size: cover;
 }
 
 
 .homeless-banner{
   background-image:url("img/homies-banner.jpg");
-  background-size: cover;
 }
 
 .hack-club-banner{
   background-image:url("img/hack-club.jpg");
-  background-size: cover;
+}
+
+.graphic-design-banner{
+  background-image:url("img/design-banner.jpg");
 }
 
 .project-heading{
@@ -560,6 +561,33 @@ footer img{
   background-color: #27b954;
 }
 
+/* Graphic Design Page */
+
+.image-gallery{
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* text-align:center; */
+  /* width: 100%; */
+}
+
+.image-gallery > img{
+  /* width: 100%; */
+  /* height: auto; */
+  padding: 20px;
+  width: 600px;
+}
+
+.cities > img{
+  width: 450px;
+}
+
+.project-body-text > .image-gallery > p{
+  font-size: 5px;
+  margin-top:0px;
+}
 
 @media only screen and (min-width: 1500px) {
   .project-description{
@@ -644,12 +672,9 @@ footer img{
     flex-direction: column;
   }
 
-
-
   .project-description{
     width: 80%;
     /* border: solid 2px red; */
-
     margin: auto !important;
   }
 
@@ -713,6 +738,14 @@ footer img{
     /* width: 300px;
     height: 300px; */
     display: none;
+  }
+
+  .image-gallery > img{
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    flex-direction: column;
+    width: 100%;
+    height: auto;
   }
 }
 
